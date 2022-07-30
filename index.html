@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jblack jack</title>
+    <!-- Normalize CSS for consistency across browsers -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
+	
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@300;600&family=Quicksand:wght@600&display=swap" rel="stylesheet">
+	
+	<!-- Styles -->
+    <link href="styles.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
+    <!--Load jQuery Easing...-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" defer></script>
+    
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="fichasbox">
+        <p id="cash">$0</p>
+    </div>
+
+    <div id="title">
+        <p>21</p>
+        <h1>BLACK JACK</h1>
+    </div>
+
+    <section id="dealerboard" class="board">
+        <p>Croupier</p>
+        <div id="dealerpack" class="cardpack"></div>
+        <span id="dealerscore" class="score"><strong>0 pontos</strong></span>
+    </section>
+    
+    <div id="mensagemboard">
+        <h2><a href="#" id="start">Clique para iniciar</a></h2>
+        <div id="playcardsboard">
+            <div id="playcard3"></div>
+            <div id="playcard2"></div>
+            <div id="playcard1"></div>
+        </div>
+    </div>
+
+    <section id="betboard">
+        <p id="bet1A">$0</p>
+        <p id="bet1B">$0</p>
+    </section>
+
+    <section id="playerboard" class="board">
+        <div id="playerContent" class="playercontent"><p>Você</p></div>
+        <div id="player1AContent" class="playercontent">
+            <div id="player1Apack" class="cardpack"></div>
+            <span id="player1AScore" class="score"><strong>0 pontos</strong></span>
+        </div>
+
+        <div id="player1BContent" class="playercontent">
+            <div id="player1Bpack" class="cardpack"></div>
+            <span id="player1BScore" class="score"><strong>0 pontos</strong></span>
+        </div>
+    </section>
+    <section id="controlContent">
+        <div id="player1AControl" class="control">
+            <div id="btn1Asplit" class="btnsplit"><a href="#" class="btntxt">Dividi</a></div>
+            <div id="btn1Acontinue" class="btncontinue"><a href="#" class="btntxt">+ Carta</a></div>
+            <div id="btn1Apass" class="btnparar"><a href="#" class="btntxt">Pare</a></div>
+        </div>
+        <div id="player1BControl" class="control">
+            <div id="btn1Bcontinue" class="btncontinue"><a href="#" class="btntxt">+ Carta</a></div>
+            <div id="btn1Bpass" class="btnparar"><a href="#" class="btntxt">Pare</a></div>
+        </div>
+    
+    </section>
+
+
+</body>
+</html>
