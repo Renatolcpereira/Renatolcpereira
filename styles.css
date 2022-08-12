@@ -141,7 +141,7 @@ h1 {
     border-radius: 15px;
     color: #dbd400;
     border: 1px solid #dbd400;
-    animation: pulsate_msg 0.5s 5s 4 alternate; 
+    animation: pulsate_msg 0.5s 3s 4 alternate; 
 }
 
   @keyframes pulsate_msg {
@@ -197,10 +197,13 @@ h1 {
     position: absolute;
     width: 35px;
     height: 35px;
-    z-index: 1;
-    animation: pulsate 0.5s 1s 4 alternate;  
+    z-index: 1; 
     border: 0.2px solid #fff;
     border-radius: 50%
+  }
+
+  .pulse {
+    animation: pulsate 0.5s 1s 4 alternate; 
   }
   
   @keyframes pulsate {
